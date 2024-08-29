@@ -203,11 +203,6 @@ public static class MalumCheats
     {
         if (CheatToggles.killAll){
 
-            if (Utils.isLobby){
-
-                HudManager.Instance.Notifier.AddDisconnectMessage("Killing in lobby disabled for being too buggy");
-
-            }else{
 
                 // Kill all players by sending a successful MurderPlayer RPC call
                 foreach (var player in PlayerControl.AllPlayerControls)
